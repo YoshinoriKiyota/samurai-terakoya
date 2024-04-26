@@ -43,42 +43,27 @@ li {
 ヘッダー
 ------------------------------------------ */
 header {
-    align-items: center;
-    box-sizing: border-box;
-    display: flex;
-    justify-content: space-between;
-    padding: 1rem 2rem;
-    width: 100%;
+    width: 80%;
+    margin: 10px auto 20px auto;
 }
 
-.headerLogo {
-    color: #000;
-    min-width: 80px;
-    text-decoration: none;
+h1 {
+    font-size: 2rem;
+}
+
+#flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
 }
 
 .list {
-    box-sizing: border-box;
     display: flex;
-    margin: 0;
-    padding: 0;
-}
-
-.listItem {
-    list-style: none;
-    text-decoration: none;
 }
 
 .listLink {
-    color: #000;
-    display: block;
-    margin-right: 30px;
-    text-decoration: none;
-    padding: 10px 0px;
-}
-
-.listLink:hover {
-    filter: opacity(0.6);
+    padding-right: 30px;
 }
 
 .hamburger-menu {
