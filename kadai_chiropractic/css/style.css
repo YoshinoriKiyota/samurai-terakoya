@@ -1,0 +1,643 @@
+@charset "UTF-8";
+
+html {
+    font-size: 100%;
+}
+
+body {
+    font-family: "Noto Sans JP", sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+.text_color {
+    color: #1B9240;
+}
+
+.width_control {
+    max-width: 890px;
+    margin: 0 auto 0 auto;
+}
+
+/* ---------------------------------------------------------------------------------------
+ヘッダー
+--------------------------------------------------------------------------------------- */
+header {
+    position: relative;
+}
+
+#navi_control {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    z-index: 3;
+}
+
+#navi_control img {
+    margin-left: 40px;
+}
+
+header ul {
+    display: flex;
+    align-items: center;
+    margin-left: 90px;
+}
+
+header ul a {
+    color: #ffffff;
+    text-shadow: 1px 1px 0px rgba(8, 0, 8, 0.29);
+}
+
+header ul li {
+    margin-left: 50px;
+    list-style: none;
+}
+
+#navi_btn {
+    padding: 10px 15px;
+    background-color: #0C4324;
+    border: solid 1.5px #0C4324;
+    border-radius: 7px;   
+}
+
+.carousel_area {
+    display: flex;
+    position: relative;
+}
+
+.carousel_title {
+    width: 20vw;
+}
+
+.carousel_title p {
+    font-family: "Shippori Mincho";
+    writing-mode: vertical-rl;
+    color: #1B9240;
+    font-size: 2rem;
+    letter-spacing: 10px;
+    line-height: 1.6;
+    margin: 60% auto 50% 45%;
+}
+
+.carousel {
+   width: 80vw;
+   clip-path: ellipse(57% 87% at 65% 34%);
+   
+}
+
+.carousel img {
+    width: 100%;
+}
+
+/* #curve_img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background: #F0F5E1;
+    clip-path: ellipse(57% 87% at 78% 30%);
+} */
+
+.pc_image { 
+    display: block !important; 
+}
+.sp_image { 
+    display: none !important; 
+}
+
+/* ---------------------------------------------------------------------------------------
+Newsお知らせ
+--------------------------------------------------------------------------------------- */
+#news {
+    max-width: 1090px;
+    margin: 0 auto 0 auto;
+    display: flex;
+    align-items: center;
+}
+
+#news span {
+    font-size: 1rem;
+    font-weight: normal;
+    padding-left: 15px;
+}
+
+#news a {
+    color: black;
+    margin-left: auto;
+}
+
+#news p:nth-child(2) {
+    margin-left: 40px;
+}
+
+#news p:nth-child(3) {
+    color: white;
+    font-weight: bold;
+    padding: 2px 15px;
+    margin-left: 8px;
+    background-color: #468459;
+    border: solid 1.5px #468459;
+    border-radius: 5px;
+    flex-shrink: 0;
+}
+
+#news p:nth-child(4) {
+    margin-left: 25px;
+}
+
+#sp_news {
+    display: none;
+}
+
+/* ---------------------------------------------------------------------------------------
+Concept特徴
+--------------------------------------------------------------------------------------- */
+#concept {
+    margin-top: 100px;
+    position: relative;
+    padding-bottom: 180px;
+}
+
+.concept_flex {
+    display: flex;
+    justify-content: space-around;
+}
+
+#concept_text {
+    width: 330px;
+}
+
+#concept_image {
+    margin-top: 30px;
+}
+
+#concept_image img {
+    max-width: 100%;
+}
+
+#text_control {
+    margin: 30px 0 30px 0;
+    font-size: 2rem;
+    font-weight: bold;
+    line-height: 1.6;
+}
+
+#concept_btn {
+    display: block;
+    color: black;
+    border: solid 1.5px black;
+    border-radius: 7px;
+    width: 160px;
+    margin: 20px 0 0 145px;
+    padding: 5px 20px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+#concept_btn:hover {
+    background-color: #1B9240;
+    border: solid 1.5px #1B9240;
+    color: white;
+}
+
+.top_concept_sec {
+    background-image: url(../img/concept-text-bg.png), url(../img/BGicon_Light@3x.svg);
+    background-repeat: no-repeat;
+    background-position: top 6rem left 9rem, top 25rem right -3rem;
+}
+
+
+/* ---------------------------------------------------------------------------------------
+コース・料金
+--------------------------------------------------------------------------------------- */
+#course_fee {
+    position: relative;  
+}
+
+.waves_img {
+    position: absolute;
+    z-index: 3;
+    width: 100%;
+}
+
+#course_fee_backcolor {
+    padding-top: 60px;
+    background-color: #F0F5E1;
+    background-image: url(../img/course_text_bg.png), url(../img/BGicon_Green@3x.svg);
+    background-repeat: no-repeat;
+    background-position: top 16rem left 8rem, top 32rem right -5rem;
+}
+
+#course_fee_pd {
+    padding: 50px 0 150px 0;
+}
+
+#course_fee h2 {
+    text-align: center;
+}
+
+#left_icon {
+    margin-right: 15px;
+}
+
+#right_icon {
+    margin-left: 15px;
+}
+
+#course_fee_flex {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+#course_fee_flex img {
+    border-radius: 25px;
+}
+
+.course_fee_text_control h3 {
+    margin-top: 20px;
+}
+
+.course_fee_text_control ul {
+    margin-left: 35px;
+    line-height: 2.5;
+}
+
+#course_fee_btn {
+    display: block;
+    color: black;
+    border: solid 1.5px black;
+    border-radius: 7px;
+    text-align: center;
+    width: 240px;
+    margin: 25px auto 0 auto;
+    padding: 5px 20px;
+    text-align: center;
+}
+
+/* ---------------------------------------------------------------------------------------
+お客様の声
+--------------------------------------------------------------------------------------- */
+#customer_voice {
+    position: relative;
+}
+
+#customer_voice_img {
+    width: 100%;
+}
+
+#customer_voice h2 {
+    text-align: center;
+    position: absolute;
+    top: 255px;
+    right: 0px;
+    left: 0px;
+}
+
+#customer_voice_flex {
+    display: flex;
+    justify-content: space-between;
+    max-width: 980px;
+    margin: 130px auto 0 auto;
+}
+
+.customer_voice_content {
+    width: 25%;
+}
+
+.customer_voice_content h3 {
+    text-align: center;
+}
+
+.img_cut {
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border: 3px solid #999;
+}
+
+#customer_voice_btn {
+    display: block;
+    color: black;
+    border: solid 1.5px black;
+    border-radius: 7px;
+    text-align: center;
+    width: 250px;
+    margin: 50px auto 75px auto;
+    padding: 5px 20px;
+    text-align: center;
+}
+
+/* ---------------------------------------------------------------------------------------
+お気軽にご来院ください(住所・地図・問い合わせ)
+--------------------------------------------------------------------------------------- */
+#store_information {
+    position: relative;
+}
+
+#store_information h2 {
+    text-align: center;
+}
+
+#store_information a {
+    color: white;
+}
+
+#store_information_backcolor {
+    background-color: #F0F5E1;
+    padding: 120px 0 65px 0;
+}
+
+#store_information_flex {
+    max-width: 980px;
+    margin: 30px auto 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.store_information_content img {
+    max-width: 100%;
+}
+
+.store_information_content p:nth-child(1) {
+    color: #1B9240;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 14px;
+}
+
+.store_information_content p:nth-child(2) {
+    margin-bottom: 14px;
+}
+
+.store_information_content p:nth-child(3) {
+    color: #1B9240;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 14px;
+}
+
+#inquiry_btn {
+    display: block;
+    width: 300px;
+    margin-top: 25px;
+    text-align: center;
+    padding: 10px 15px;
+    background-color: #1B9240;
+    border: solid 1.5px #1B9240;
+    border-radius: 7px;  
+}
+
+#top_btn {
+    margin: 5% 0 3% 90%;
+}
+
+
+#store_information_naviflex {
+    display: flex;
+    max-width: 960px;
+    margin: 0 auto 0 auto;
+}
+
+#store_information_naviflex ul {
+    display: flex;
+    margin-left: 30px;
+}
+
+#store_information_naviflex ul li {
+    list-style: none;
+    margin-right: 25px;
+}
+
+#store_information_naviflex ul a {
+    color: black;
+}
+
+/* ---------------------------------------------------------------------------------------
+フッター
+--------------------------------------------------------------------------------------- */
+footer {
+    background-color: #468459;
+    padding: 18px 0;
+}
+
+footer p {
+    text-align: center;
+    color: white;
+}
+
+/* -------------------------------------------------------------------------------------------------------------------
+スマホサイズ
+---------------------------------------------------------------------------------------------------------------------- */
+@media screen and (max-width: 768px) {
+    
+/* ---------------------------------------------------------------------------------------
+ヘッダー
+--------------------------------------------------------------------------------------- */
+.pc_image { 
+    display: none !important; 
+}
+.sp_image { 
+    display: block !important; 
+}
+
+/* ハンバーガーメニュー */
+.menu_btn {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    height: 60px;
+    width: 60px;
+    justify-content: center;
+    align-items: center;
+    z-index: 90;
+}
+
+.menu_btn span,
+.menu_btn span:before,
+.menu_btn span:after {
+    content: '';
+    display: block;
+    height: 3px;
+    width: 25px;
+    border-radius: 3px;
+    background-color: #1B9240;
+    position: absolute;
+}
+
+.menu_btn span:before {
+    bottom: 8px;
+}
+
+.menu_btn span:after {
+    top: 8px;
+}
+
+#menu_btn_check:checked ~ .menu_btn span {
+    background-color: rgba(255, 255, 255, 0);/*メニューオープン時は真ん中の線を透明にする*/
+}
+
+#menu_btn_check:checked ~ .menu_btn span::before {
+    bottom: 0;
+    transform: rotate(45deg);
+}
+
+#menu_btn_check:checked ~ .menu_btn span::after {
+    top: 0;
+    transform: rotate(-45deg);
+}
+
+#menu_btn_check {
+    display: none;
+}
+
+.menu_content {
+    width: 100%;
+    height: 60%;
+    position: fixed;
+    top: 0;
+    left: 100%;
+    z-index: 80;
+    background-color: white;
+    transition: all 0.5s;
+}
+
+.menu_content ul {
+    padding: 70px 10px 0;
+}
+
+.menu_content ul li {
+    list-style: none;
+    margin-left: 30px;
+    margin-bottom: 25px;
+}
+
+.menu_content ul li:first-child {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.menu_content ul li a {
+    display: block;
+    width: 100%;
+    font-size: 15px;
+    box-sizing: border-box;
+    color:black;
+    text-decoration: none;
+    position: relative;
+}
+
+#menu_btn_check:checked ~ .menu_content {
+    left: 0;/*メニューを画面内へ*/
+}
+
+/* ---------------------------------------------------------------------------------------
+Newsニュース
+--------------------------------------------------------------------------------------- */
+#news {
+    display: none;
+}
+
+
+
+/* ---------------------------------------------------------------------------------------
+Concept特徴
+--------------------------------------------------------------------------------------- */
+.concept_flex {
+    display: flex;
+    flex-direction: column-reverse;
+}
+    
+#concept_btn {
+    display: block;
+    color: black;
+    border: solid 1.5px black;
+    border-radius: 7px;
+    width: 160px;
+    margin: 40px auto 0 auto;
+    padding: 5px 20px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+
+
+/* ---------------------------------------------------------------------------------------
+コース・料金
+--------------------------------------------------------------------------------------- */
+#course_fee_flex {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+
+/* ---------------------------------------------------------------------------------------
+お客様の声
+--------------------------------------------------------------------------------------- */
+#customer_voice_flex {
+    display: flex;
+    flex-direction: column;
+    width: 72%;
+    margin: 60px auto 0 auto;
+}
+
+.customer_voice_content {
+    width: 85%;
+    margin-top: 40px;
+}
+
+
+
+
+
+/* ---------------------------------------------------------------------------------------
+お気軽にご来院ください(住所・地図・問い合わせ)
+--------------------------------------------------------------------------------------- */
+#store_information_flex {
+    width: 80%;
+    margin: 30px auto 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+#gmap {
+    height: 0;
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    position: relative;
+}
+
+#gmap iframe {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+}
+
+#top_btn {
+    margin: 5% 0 3% 80%;
+}
+
+#store_information_naviflex {
+    display: block;
+    width: 75%;
+    margin: 0 auto 0 auto;
+}
+
+#store_information_naviflex .ul_flex {
+    display: block;
+    margin-left: 30px;
+}
+
+
+
+}
