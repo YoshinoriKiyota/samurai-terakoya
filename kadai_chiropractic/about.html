@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <title>当院について</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+    <link rel="stylesheet" href="css/about.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+    <!-- カルーセル -->
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+</head>
+
+<body>
+    <header>
+        <div id="navi_control">
+            <a href="#"><img src="img/Frame 2259@3x.svg" alt="タイトルロゴ"></a>
+            <nav class="pc_image">
+                <ul>
+                    <li><a href="">ホーム</a></li>
+                    <li><a href="">当院について</a></li>
+                    <li><a href="">コース・料金</a></li>
+                    <li><a href="">お知らせ</a></li>
+                    <li><a href="">お客様の声</a></li>
+                    <li><a id="navi_btn" href="">ご予約・お問い合わせ</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="hamburger_menu sp_image">
+            <input type="checkbox" id="menu_btn_check">
+            <label for="menu_btn_check" class="menu_btn"><span></span></label>
+            <div class="menu_content">
+                <img src="img/Frame 2259@3x.svg" alt="タイトルロゴ">
+                <ul>
+                    <li>メニュー</li>
+                    <li><a href="">ホーム</a></li>
+                    <li><a href="">当院について</a></li>
+                    <li><a href="">コース・料金</a></li>
+                    <li><a href="">お知らせ</a></li>
+                    <li><a href="">お客様の声</a></li>
+                    <li><a href="">ご予約・お問い合わせ</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div id="main_visual">
+            <div id="main_visual_flex">
+                <div id="main_title">
+                    <div id="main_title2">
+                        <p>About</p>
+                        <p>当院について</p>
+                    </div>
+                </div>
+                <div class="main_image">
+                    <picture>
+                        <source media="(max-width: 768px)" srcset="img/SP-About.png">
+                        <img src="img/TOP_Carousel1.png" alt="TOP画像1">
+                    </picture>
+                </div>
+            </div>
+        </div>
+
+        <p id="current_page">ホーム > 当院について</p>
+
+        <section id="concept" class="top_concept_sec">
+            <div class="width_control">
+                <div class="concept_flex">
+                    <div id="concept_text">
+                        <h2 class="text_color"><img src="img/Head_01_Icon@3x.svg" alt="アイコン"> Concept</h2>
+                        <p class="text_color">特長</p>
+                        <p id="text_control" class="text_color pc_image">日々変化する<br>カラダと心を癒す<br>パーソナル<br>トレーナーとして</p>
+                        <p id="text_control" class="text_color sp_image">日々変化するカラダと心を癒すパーソナルトレーナーとして</p>
+                        <p id="sp_text_control" class="text_color">日々変化するカラダと心を癒すパーソナルトレーナーとして</p>
+                        <p>当院では、問診にてお客様の症状や生活スタイル、ご希望を丁寧にお伺いした上で施術方針を立てていきます。<br><br>
+                            また、根本的に症状を改善するために、お客様ご自身で行えるケアやストレッチもお伝えします。<br><br>
+                            ご不安な点や疑問点などお気軽にご相談くださいませ。</p>
+                    </div>
+
+                    <div id="concept_image">
+                        <img src="img/Concept-Imagegroup.png" alt="マッサージ画像">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="flow" class="top_flow_sec">
+            <div class="width_control">
+                <div class="flow_flex">
+                    <div id="flow_text">
+                        <h2 class="text_color"><img src="img/Head_01_Icon@3x.svg" alt="アイコン"> Flow</h2>
+                        <p class="text_color">施術の流れ</p>
+                        <ol>
+                            <li>受付</li>
+                            <li>問診表のご記入</li>
+                            <li>カウンセリング</li>
+                            <li>施術</li>
+                            <li>アフターカウンセリング</li>
+                        </ol>
+                    </div>
+
+                    <div id="flow_image">
+                        <img src="img/Flow-Imagegroup.png" alt="マッサージ画像">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="course_fee">
+            <h2 class="text_color"><img id="left_icon" src="img/Head_02_DecoLeft16@3x.svg" alt="アイコン">根本改善のポイント<img
+                    id="right_icon" src="img/Head_02_DecoRight16@3x.svg" alt="アイコン"><br><br>
+                お体の状態や生活習慣、ご要望を丁寧にお伺いします。<br><br class="sp_br">ご自身でできるケアなども含めて施術方針をお作りします。</h2>
+
+            <div id="course_fee_flex">
+                <div class="course_fee_text_control">
+                    <img src="img/Point1.png" alt="カウンセリング">
+                    <h3>丁寧なカウンセリング</h3>
+                </div>
+
+                <div class="course_fee_text_control">
+                    <img src="img/Point2.png" alt="分析">
+                    <h3>徹底分析</h3>
+                </div>
+
+                <div class="course_fee_text_control">
+                    <img src="img/Point3.png" alt="人骨の絵">
+                    <h3>施術計画のご提案</h3>
+                </div>
+            </div>
+        </section>
+
+        <section id="store_information">
+            <img class="waves_img" src="img/waves.svg" alt="波状の区切り線">
+            <div id="store_information_backcolor">
+                <h2 class="text_color"><img id="left_icon" src="img/Head_02_DecoLeft16@3x.svg"
+                        alt="アイコン">お気軽にご来院ください<img id="right_icon" src="img/Head_02_DecoRight16@3x.svg" alt="アイコン"></h2>
+
+                <div id="store_information_flex">
+                    <div class="store_information_content">
+                        <p>JR「秋葉原駅」より徒歩1分</p>
+                        <p>〒101-0022<br>東京都千代田区神田練塀町300番地<br>住友不動産秋葉原駅前ビル 5F</p>
+                        <p>tel: 03-1234-5678</p>
+                        <img src="img/business_hours.png" alt="営業時間">
+                        <a id="inquiry_btn" href="#">ご予約・お問い合わせはこちらから</a>
+                    </div>
+
+                    <div class="store_information_content">
+                        <div id="gmap">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6480.13735622465!2d139.77207767506147!3d35.699927528947924!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188fee13660e23%3A0x77137876edf742ac!2z5L2P5Y-L5LiN5YuV55Sj56eL6JGJ5Y6f6aeF5YmN44OT44Or!5e0!3m2!1sja!2sjp!4v1716379438631!5m2!1sja!2sjp"
+                                width="500" height="350" style="border:0;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="top_btn">
+                    <a href="#"><img src="img/btn_Back.png" alt="先頭に戻るボタン"></a>
+                </div>
+                <div id="store_information_naviflex">
+                    <img src="img/Frame 2259@3x.svg" alt="タイトルロゴ">
+                    <nav>
+                        <ul>
+                            <li><a href="">TOP</a></li>
+                            <li><a href="">当院について</a></li>
+                            <li><a href="">コース・料金</a></li>
+                            <li><a href="">お知らせ</a></li>
+                            <li><a href="">お客様の声</a></li>
+                            <li><a href="">ご予約・お問い合わせ</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy2023 SAMURAI整体院</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="js/script.js"></script>
+
+</body>
