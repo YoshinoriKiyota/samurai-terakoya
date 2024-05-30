@@ -18,7 +18,11 @@ a {
 
 .width_control {
     max-width: 800px;
-    margin: 0 auto 0 auto;
+    margin: 0 auto;
+}
+
+.space {
+    margin-left: 20px;
 }
 
 /* ---------------------------------------------------------------------------------------
@@ -29,21 +33,21 @@ header {
 }
 
 #navi_control {
-    margin-top: 20px;
+    width: 100%;
+    margin-top: 20px ;
     display: flex;
+    justify-content: center;
     align-items: center;
     position: absolute;
     z-index: 3;
 }
 
-#navi_control img {
-    margin-left: 40px;
+#navi_control nav {
+    margin-left: 100px;
 }
 
 header ul {
     display: flex;
-    align-items: center;
-    margin-left: 90px;
 }
 
 header ul a {
@@ -52,6 +56,7 @@ header ul a {
 }
 
 header ul li {
+    font-size: 0.875rem;
     margin-left: 50px;
     list-style: none;
 }
@@ -69,7 +74,7 @@ header ul li {
 }
 
 .carousel_title {
-    width: 20vw;
+    width: 20%;
 }
 
 .carousel_title p {
@@ -79,11 +84,13 @@ header ul li {
     font-size: 2rem;
     letter-spacing: 10px;
     line-height: 1.6;
-    margin: 60% auto 50% 45%;
+    margin: 140px 0 0 100px;
+    position: absolute;
+    z-index: 5;
 }
 
 .carousel {
-   width: 80vw;
+   width: 80%;
    clip-path: ellipse(57% 87% at 65% 34%);
    
 }
@@ -148,12 +155,12 @@ Concept特徴
 --------------------------------------------------------------------------------------- */
 #concept {
     margin-top: 100px;
-    position: relative;
     padding-bottom: 180px;
 }
 
 .concept_flex {
     display: flex;
+    justify-content: space-between;
 }
 
 #concept_text {
@@ -161,7 +168,6 @@ Concept特徴
 }
 
 #concept_image {
-    width: 60%;
     margin-top: 30px;
     margin-left: auto;
 }
@@ -249,9 +255,13 @@ Concept特徴
     margin-top: 50px;
 }
 
+.course_fee_text_control {
+    width: 40%;
+}
+
 #course_fee_flex img {
     max-width: 100%;
-    border-radius: 25px;
+    border-radius: 20px;
 }
 
 .course_fee_text_control h3 {
@@ -433,6 +443,127 @@ footer p {
 /* -------------------------------------------------------------------------------------------------------------------
 スマホサイズ
 ---------------------------------------------------------------------------------------------------------------------- */
+@media screen and (max-width: 1146px) {
+
+.pc_image { 
+    display: none !important; 
+}
+.sp_image { 
+    display: block !important; 
+}
+
+    /* ハンバーガーメニュー */
+.menu_btn {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    height: 60px;
+    width: 60px;
+    justify-content: center;
+    align-items: center;
+    z-index: 90;
+}
+
+.menu_btn span,
+.menu_btn span:before,
+.menu_btn span:after {
+    content: '';
+    display: block;
+    height: 3px;
+    width: 25px;
+    border-radius: 3px;
+    background-color: #1B9240;
+    position: absolute;
+}
+
+.menu_btn span:before {
+    bottom: 8px;
+}
+
+.menu_btn span:after {
+    top: 8px;
+}
+
+#menu_btn_check:checked ~ .menu_btn span {
+    background-color: rgba(255, 255, 255, 0);/*メニューオープン時は真ん中の線を透明にする*/
+}
+
+#menu_btn_check:checked ~ .menu_btn span::before {
+    bottom: 0;
+    transform: rotate(45deg);
+}
+
+#menu_btn_check:checked ~ .menu_btn span::after {
+    top: 0;
+    transform: rotate(-45deg);
+}
+
+#menu_btn_check {
+    display: none;
+}
+
+.menu_content {
+    width: 100%;
+    height: 75%;
+    position: fixed;
+    top: 0;
+    left: 100%;
+    z-index: 80;
+    background-color: white;
+    transition: all 0.5s;
+}
+
+.menu_content img {
+    margin: 20px 0 0 20px;
+}
+
+.menu_content ul {
+    margin-top: 30px;
+}
+
+.menu_content ul li {
+    list-style: none;
+    margin-top: 28px;
+}
+
+.menu_content ul li:first-child {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.menu_content ul li:nth-child(2) {
+    margin-top: 15px;
+}
+
+.menu_content ul li a {
+    display: block;
+    width: 100%;
+    font-size: 1.125rem;
+    box-sizing: border-box;
+    color:black;
+    text-shadow: none;
+    text-decoration: none;
+    position: relative;
+}
+
+#navi_btn {
+    width: 280px;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    padding: 10px 15px;
+    background-color: #0C4324;
+    border: solid 1.5px #0C4324;
+    border-radius: 7px;   
+}
+
+#menu_btn_check:checked ~ .menu_content {
+    left: 0;/*メニューを画面内へ*/
+}
+
+}
+
 @media screen and (max-width: 768px) {
 
     h2 {
@@ -449,8 +580,22 @@ footer p {
     display: block !important; 
 }
 
+header ul {
+    display: block;
+}
+
 #navi_control img {
-    margin-left: 20px;
+    margin-right: 60px;
+}
+
+.carousel {
+    width: 80%;
+    clip-path: ellipse(80% 70% at 100% 33%);
+    
+}
+
+.carousel_title p {
+    margin: 140px 0 0 50px;
 }
 
 /* ハンバーガーメニュー */
@@ -506,7 +651,7 @@ footer p {
 
 .menu_content {
     width: 100%;
-    height: 60%;
+    height: 75%;
     position: fixed;
     top: 0;
     left: 100%;
@@ -515,12 +660,17 @@ footer p {
     transition: all 0.5s;
 }
 
+.menu_content img {
+    margin: 20px 0 0 20px;
+}
+
 .menu_content ul {
-    padding: 70px 10px 0;
+    margin-top: 30px;
 }
 
 .menu_content ul li {
     list-style: none;
+    margin-top: 28px;
 }
 
 .menu_content ul li:first-child {
@@ -528,15 +678,30 @@ footer p {
     font-weight: bold;
 }
 
+.menu_content ul li:nth-child(2) {
+    margin-top: 15px;
+}
+
 .menu_content ul li a {
     display: block;
     width: 100%;
-    font-size: 15px;
+    font-size: 1.125rem;
     box-sizing: border-box;
     color:black;
     text-shadow: none;
     text-decoration: none;
     position: relative;
+}
+
+#navi_btn {
+    width: 280px;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    padding: 10px 15px;
+    background-color: #0C4324;
+    border: solid 1.5px #0C4324;
+    border-radius: 7px;   
 }
 
 #menu_btn_check:checked ~ .menu_content {
@@ -650,8 +815,10 @@ Concept特徴
 }
 
 .course_fee_text_control {
+    width: 330px;
     margin-bottom: 40px;
 }
+
 
 #course_fee_pd {
     padding: 50px 0 80px 0;
@@ -724,10 +891,16 @@ Concept特徴
 }
 
 #store_information_flex {
-    width: 80%;
+    width: 90%;
     margin: 30px auto 0 auto;
     display: flex;
     flex-direction: column;
+}
+
+#inquiry_btn {
+    display: block;
+    width: 330px;
+    margin: 25px auto 0 auto;
 }
 
 #gmap {
